@@ -1,0 +1,11 @@
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/bin/Debug/net8.0/BuberDinner.Application.deps.json
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/bin/Debug/net8.0/BuberDinner.Application.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/bin/Debug/net8.0/BuberDinner.Application.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.AssemblyInfoInputs.cache
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.AssemblyInfo.cs
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.csproj.CoreCompileInputs.cache
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/refint/BuberDinner.Application.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/ref/BuberDinner.Application.dll
