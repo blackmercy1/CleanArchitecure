@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kCsQtBBunWM0Kt4sj02MQ4uyzb0iDP65wxByFB60XODBUbogQyzA42Vk956RarjHRENpbyVxyBCIv5QDgvRr6Q==",
+  "dgSpecHash": "cdiTn00Ax9olU3RYZSwNE064nQLCPk4I9IhiykpWgZ38OKT98eq4if7CIe+TNMMElDHNyf0sEUl07PudzRHcEQ==",
   "success": true,
   "projectFilePath": "/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "/Users/black_mercy/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "/Users/black_mercy/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/black_mercy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
     "/Users/black_mercy/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/Users/black_mercy/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/black_mercy/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

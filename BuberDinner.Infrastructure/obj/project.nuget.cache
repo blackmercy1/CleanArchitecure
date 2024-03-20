@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QvIw/h1yW19Emg02PK5tQ8wTWxWg0yan9Zac5HhulWhLBmfls8iMG4pp5/5ugeJXupgRIwrlCtN5353ArOC4gA==",
+  "dgSpecHash": "CgPUiqksqpsppalmePF8EuRpwl0s3gh24H9s96PiBYhGozGjPzJiiGpC5rNtMzc9YUu/SCae7iDcNzYmJXPutg==",
   "success": true,
   "projectFilePath": "/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Infrastructure/BuberDinner.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/black_mercy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

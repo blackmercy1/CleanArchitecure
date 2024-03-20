@@ -9,3 +9,7 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/refint/BuberDinner.Application.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.pdb
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/ref/BuberDinner.Application.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/bin/Debug/net8.0/BuberDinner.Domain.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/bin/Debug/net8.0/BuberDinner.Domain.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.csproj.AssemblyReference.cache
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/obj/Debug/net8.0/BuberDinner.Application.csproj.CopyComplete

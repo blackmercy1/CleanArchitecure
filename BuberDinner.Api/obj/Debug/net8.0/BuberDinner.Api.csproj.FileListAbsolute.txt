@@ -31,3 +31,12 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/obj/Debug/net8.0/BuberDinner.Api.pdb
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/obj/Debug/net8.0/BuberDinner.Api.genruntimeconfig.cache
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/obj/Debug/net8.0/ref/BuberDinner.Api.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Application.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Contracts.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Domain.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Infrastructure.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Contracts.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Application.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Infrastructure.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/BuberDinner.Domain.pdb
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
