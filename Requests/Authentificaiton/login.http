@@ -4,6 +4,8 @@ POST {{host}}/auth/login
 Content-Type: application/json
 
 {
-"email": "amichai@mantinband.com",
-"password": "Amiko1232!"
+  "firstName": "Amichai",
+  "lastName": "Mantinband",
+  "email": "amichai@mantinband.com",
+  "password": "Amiko12321!"
 }

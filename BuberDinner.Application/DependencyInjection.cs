@@ -1,3 +1,4 @@
+using BuberDinner.Application.Common.Interfaces.Authentication;
 using BuberDinner.Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 
