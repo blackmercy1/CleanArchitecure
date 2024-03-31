@@ -9,3 +9,4 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Domain/obj/Debug/net8.0/refint/BuberDinner.Domain.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Domain/obj/Debug/net8.0/BuberDinner.Domain.pdb
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Domain/obj/Debug/net8.0/ref/BuberDinner.Domain.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Domain/obj/Debug/net8.0/BuberDinner.Domain.csproj.AssemblyReference.cache

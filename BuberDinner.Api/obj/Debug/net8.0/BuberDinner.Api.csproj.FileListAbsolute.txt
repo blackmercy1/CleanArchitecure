@@ -45,3 +45,7 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/ErrorOr.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

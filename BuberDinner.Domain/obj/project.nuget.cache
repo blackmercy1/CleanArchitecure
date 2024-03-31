@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mCc/7tFWgIHme678rOw+ED8c6iT6TlG5qSYK+B8un8wYaxy1l1q+dFtw8/5mMfqr2C3X0p8H9Ax+OLma6CBx3Q==",
+  "dgSpecHash": "hLQaOb7W51DWxhy/OmR0OQyvyLDc5E1i3veMuaL5rS/aaPOAWgtmL3KN+O4RZCygjW9fHYYKVmiObfbh8WYOJA==",
   "success": true,
   "projectFilePath": "/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Domain/BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/black_mercy/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

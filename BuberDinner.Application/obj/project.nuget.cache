@@ -1,10 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "QiDD0e54aVaO6IUZ19Oea+J51eN40s+i0ZJv5pX53p5sl1w0eKWHuwV0KQCY9YJVWBhF3OAj4PQLcq4gyXFx4A==",
+  "dgSpecHash": "jgJ1V0klabK+poJmTyriENlKU+qfJgvh7ieH4EYKpudIvLDNBgu9MH620iZ4xqQg7JD6o+gpWYraYXkHB/mwDQ==",
   "success": true,
   "projectFilePath": "/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Application/BuberDinner.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/black_mercy/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
+    "/Users/black_mercy/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/black_mercy/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/black_mercy/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "/Users/black_mercy/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.1/microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.2.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
