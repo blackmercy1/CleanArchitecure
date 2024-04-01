@@ -23,6 +23,8 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, ErrorOr<Authenticat
     private User? GetUserIfExists(string email) => _userRepository.GetUserByEmail(email);
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
+        await Task.CompletedTask;
+        
         var user = GetUserIfExists(query.Email);
 
         if (user is null)

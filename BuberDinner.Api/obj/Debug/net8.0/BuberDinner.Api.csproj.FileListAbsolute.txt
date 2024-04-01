@@ -49,3 +49,6 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.Contracts.dll
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Mapster.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Mapster.Core.dll
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Api/bin/Debug/net8.0/Mapster.DependencyInjection.dll

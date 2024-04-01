@@ -3,6 +3,7 @@ using BuberDinner.Application.Authentication.Common;
 using BuberDinner.Application.Authentication.Queries.Login;
 using BuberDinner.Contracts.Authentication;
 using BuberDinner.Domain.Common.Errors;
+using MapsterMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,21 +12,23 @@ namespace BuberDinner.Api.Controllers;
 public class AuthenticationController : ApiController
 {
     private readonly ISender _mediator;
-    public AuthenticationController(ISender mediator) => _mediator = mediator;
-    
+    private readonly IMapper _mapper;
+
+    public AuthenticationController(ISender mediator, IMapper mapper)
+    {
+        _mediator = mediator;
+        _mapper =  mapper;
+    }
+
     [HttpPost("register"), Route("auth/register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {
-        var command = new RegisterCommand(
-            request.FirstName, 
-            request.LastName,
-            request.Email,
-            request.Password);
+        var command = _mapper.Map<RegisterCommand>(request);
         
         var registerResult = await _mediator.Send(command);        
         
         return registerResult.Match(
-            authResult => Ok(MapAuthResult(authResult)),
+            authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
             error => Problem(error));
     }
 
@@ -44,9 +47,7 @@ public class AuthenticationController : ApiController
     [HttpPost("login"), Route("auth/login")]
     public async Task<IActionResult> Login(RegisterRequest loginRequest)
     {
-        var loginCommand = new LoginQuery(
-            loginRequest.Email,
-            loginRequest.Password);
+        var loginCommand = _mapper.Map<LoginQuery>(loginRequest);
         
         var authResult = await _mediator.Send(loginCommand);
         
@@ -54,7 +55,7 @@ public class AuthenticationController : ApiController
             return Problem(statusCode: StatusCodes.Status401Unauthorized, title: "Invalid credentials.");
         
         return authResult.Match(
-            authenticationResult => Ok(MapAuthResult(authenticationResult)),
+            authenticationResult => Ok(_mapper.Map<AuthenticationResponse>(authenticationResult)),
             error => Problem(error));
     }
 }
