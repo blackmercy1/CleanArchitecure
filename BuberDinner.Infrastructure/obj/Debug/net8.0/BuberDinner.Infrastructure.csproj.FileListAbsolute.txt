@@ -15,3 +15,4 @@
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Infrastructure/bin/Debug/net8.0/BuberDinner.Domain.pdb
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Infrastructure/obj/Debug/net8.0/BuberDinner.Infrastructure.csproj.AssemblyReference.cache
 /Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Infrastructure/obj/Debug/net8.0/BuberDinner.Infrastructure.csproj.CopyComplete
+/Users/black_mercy/RiderProjects/CleanArchitectureDDDFromScratch/BuberDinner/BuberDinner.Infrastructure/obj/Debug/net8.0/BuberDinner.Infrastructure.sourcelink.json
