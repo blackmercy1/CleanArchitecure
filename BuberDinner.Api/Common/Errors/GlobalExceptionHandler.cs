@@ -24,7 +24,7 @@ public class GlobalExceptionHandler : IExceptionHandler
         {
             Status = newStatusCode,
             Title = "Server error",
-            Type = "https://httpstatuses.com/500",
+            Type = "https://httpstatuses.com/500/",
         };
 
         httpContext.Response.StatusCode = newStatusCode;
