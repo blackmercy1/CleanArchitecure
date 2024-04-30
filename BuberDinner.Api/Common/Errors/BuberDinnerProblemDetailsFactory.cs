@@ -22,7 +22,7 @@ public class BuberDinnerProblemDetailsFactory : ProblemDetailsFactory
         string? detail = null,
         string? instance = null)
     {
-        statusCode ??= 500;
+        statusCode ??= 501;
 
         var problemDetails = new ProblemDetails
         {
