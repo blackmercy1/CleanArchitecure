@@ -17,6 +17,7 @@ public static class DependencyInjection
             .RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
         services.AddMediatR(cfg);
 
+        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(GayBehaviour<,>));
         services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
         services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidator>();
         services.AddScoped<IValidator<LoginQuery>, LoginQueryValidator>();
