@@ -57,7 +57,7 @@ public class AuthenticationController : ApiController
     private AuthenticationResponse MapAuthResult(ErrorOr<AuthenticationResult> authResult)
     {
         var response = new AuthenticationResponse(
-            authResult.Value.User.Id,
+            authResult.Value.User.Id.Value,
             authResult.Value.User.FirstName,
             authResult.Value.User.LastName,
             authResult.Value.User.Email,
