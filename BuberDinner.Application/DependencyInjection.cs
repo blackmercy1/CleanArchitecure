@@ -15,9 +15,13 @@ public static class DependencyInjection
     {
         var cfg = new MediatRServiceConfiguration()
             .RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly());
+        
         services.AddMediatR(cfg);
         
-        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
+        services.AddScoped(
+            typeof(IPipelineBehavior<,>),
+            typeof(ValidationBehaviour<,>));
+        
         services.AddScoped<IValidator<RegisterCommand>, RegisterCommandValidator>();
         services.AddScoped<IValidator<LoginQuery>, LoginQueryValidator>();
         
