@@ -5,6 +5,8 @@ namespace BuberDinner.Domain.MenuReviewAggregate.ValueObjects;
 public class MenuReviewId : ValueObject
 {
     public Guid Value { get; }
+    
+    private MenuReviewId() { }
 
     private MenuReviewId(Guid value)
     {

@@ -17,4 +17,7 @@ public class DinnerId : ValueObject
     }
 
     public static DinnerId CreateUnique() => new(Guid.NewGuid());
+    public static DinnerId Create(Guid value) => new DinnerId(value);
+
+    private DinnerId() { }
 }

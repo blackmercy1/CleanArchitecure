@@ -1,4 +1,4 @@
-using BuberDinner.Domain.BillAgreggate;
+using BuberDinner.Domain.Aggregate.ValueObjects;
 using BuberDinner.Domain.Common.Models;
 using BuberDinner.Domain.GuestsAggregate.ValueObjects;
 
