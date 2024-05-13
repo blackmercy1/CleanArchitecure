@@ -3,13 +3,13 @@ namespace BuberDinner.Contracts.Menus;
 public record CreateMenuRequest(
     string Name,
     string Description,
-    List<MenuSection> Sections);
+    List<MenuSectionModel> Sections);
 
-public record MenuSection(
+public record MenuSectionModel(
     string Name,
     string Description,
-    List<MenuItem> Items);
+    List<MenuItemModel> Items);
 
-public record MenuItem(
+public record MenuItemModel(
     string Name,
     string Description);
