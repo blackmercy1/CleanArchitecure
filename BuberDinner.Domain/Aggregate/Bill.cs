@@ -1,19 +1,20 @@
+using BuberDinner.Domain.Aggregate.ValueObjects;
 using BuberDinner.Domain.Common.Models;
 using BuberDinner.Domain.DinnerAggregate.ValueObjects;
 using BuberDinner.Domain.GuestsAggregate.ValueObjects;
 using BuberDinner.Domain.HostAggregate.ValueObjects;
 
-namespace BuberDinner.Domain.BillAgreggate;
+namespace BuberDinner.Domain.Aggregate;
 
 public class Bill : AggregateRoot<BillId>
 {
-    public DinnerId DinnerId { get; }
-    public GuestId GuestId { get; }
-    public HostId HostId { get; }
-    public Price Price { get; }
-    
-    public DateTime CreatedDateTime { get; }
-    public DateTime UpdatedDateTime { get; }
+    public DinnerId DinnerId { get; private set; }
+    public GuestId GuestId { get; private set; }
+    public HostId HostId { get; private set; }
+    public Price Price { get; private set; }
+
+    public DateTime CreatedDateTime { get; private set; }
+    public DateTime UpdatedDateTime { get; private set; }
 
     private Bill(
         BillId id,
@@ -21,7 +22,7 @@ public class Bill : AggregateRoot<BillId>
         HostId hostId,
         Price price,
         DateTime createdDateTime,
-        DateTime updatedDateTime) 
+        DateTime updatedDateTime)
         : base(id)
     {
         HostId = hostId;
@@ -44,29 +45,8 @@ public class Bill : AggregateRoot<BillId>
             DateTime.Now,
             DateTime.Now);
     }
-}
 
-public sealed class BillId : ValueObject
-{
-    public Guid Value { get; protected set; }
-
-    private BillId(Guid value)
-    {
-        Value = value;
-    }
-
-    public static BillId CreateUnique()
-    {
-        return new(Guid.NewGuid());
-    }
-
-    public static BillId Create(Guid value)
-    {
-        return new(value);
-    }
-
-    public override IEnumerable<object> GetEqualityComponents()
-    {
-        yield return Value;
-    }
+#pragma warning disable CS8618
+    private Bill() { }
+#pragma warning restore CS8618
 }
