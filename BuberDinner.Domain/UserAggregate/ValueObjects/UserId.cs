@@ -2,15 +2,12 @@ using BuberDinner.Domain.Common.Models;
 
 namespace BuberDinner.Domain.UserAggregate.ValueObjects;
 
-public class UserId : ValueObject
+public sealed class UserId : AggregateRootId<Guid>
 {
-    public Guid Value { get;  }
+    public override Guid Value { get; protected set; }
 
-    private UserId(Guid value)
-    {
-        Value = value;
-    }
-    
+    private UserId(Guid value) => Value = value;
+
     public override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;   
