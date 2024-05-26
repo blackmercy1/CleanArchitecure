@@ -8,7 +8,7 @@ public sealed class UserId : AggregateRootId<Guid>
 
     private UserId(Guid value) => Value = value;
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;   
     }

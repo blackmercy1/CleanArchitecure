@@ -11,7 +11,7 @@ public sealed class DinnerId : AggregateRootId<Guid>
     public static DinnerId CreateUnique() => new(Guid.NewGuid());
     public static DinnerId Create(Guid value) => new DinnerId(value);
     
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }

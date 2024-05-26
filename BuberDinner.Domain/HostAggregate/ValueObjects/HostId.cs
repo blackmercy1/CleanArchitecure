@@ -11,7 +11,7 @@ public sealed class HostId : AggregateRootId<Guid>
     public static HostId Create(Guid value) => new HostId(value);
     public static HostId CreateUnique() => new(Guid.NewGuid());
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }

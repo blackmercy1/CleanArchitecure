@@ -4,15 +4,12 @@ namespace BuberDinner.Domain.MenuAggregate.ValueObjects;
 
 public sealed class MenuSectionId : AggregateRootId<Guid> 
 {
-    public override Guid Value { get; protected set; }
-
     private MenuSectionId(Guid value) => Value = value;
-
-    public override IEnumerable<object> GetEqualityComponents()
+    public override Guid Value { get; protected set; }
+    public static MenuSectionId CreateUnique() => new(Guid.NewGuid());
+    public static MenuSectionId Create(Guid value) => new(value);
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;   
     }
-    
-    public static MenuSectionId CreateUnique() => new(Guid.NewGuid());
-    public static MenuSectionId Create(Guid value) => new(value);
 }

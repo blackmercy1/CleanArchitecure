@@ -11,7 +11,7 @@ public sealed class GuestId : AggregateRootId<Guid>
         Value = value;
     }
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }
