@@ -34,7 +34,7 @@ public class Location : ValueObject
             longitude);
     }
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Name;
         yield return Description;

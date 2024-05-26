@@ -19,7 +19,7 @@ public sealed class AverageRating : ValueObject
 
     public void RemoveRating(Rating rating) => Value = ((Value * NumRatings) - rating.Value) / --NumRatings;
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }

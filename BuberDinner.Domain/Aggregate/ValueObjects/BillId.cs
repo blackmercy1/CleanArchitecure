@@ -11,17 +11,11 @@ public sealed class BillId : AggregateRootId<Guid>
         Value = value;
     }
 
-    public static BillId CreateUnique()
-    {
-        return new(Guid.NewGuid());
-    }
+    public static BillId CreateUnique() => new(Guid.NewGuid());
 
-    public static BillId Create(Guid value)
-    {
-        return new(value);
-    }
+    public static BillId Create(Guid value) => new(value);
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Value;
     }

@@ -18,7 +18,7 @@ public class Price : ValueObject
         }
     }
 
-    public override IEnumerable<object> GetEqualityComponents()
+    protected override IEnumerable<object> GetEqualityComponents()
     {
         yield return Amount;
         yield return Currency;
