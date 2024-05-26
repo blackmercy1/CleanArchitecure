@@ -2,6 +2,8 @@ using BuberDinner.Application.Common.Persistence;
 using BuberDinner.Domain.HostAggregate.ValueObjects;
 using BuberDinner.Domain.MenuAggregate;
 using BuberDinner.Domain.MenuAggregate.Entities;
+using BuberDinner.Domain.MenuAggregate.Events;
+
 using ErrorOr;
 using MediatR;
 
@@ -30,7 +32,8 @@ public class CreateMenuCommandHandler : IRequestHandler<CreateMenuCommand, Error
                 items: sections.Items.ConvertAll(items => MenuItem.Create(
                     name: items.Name,
                     description: items.Description)))));
-
+        
+        menu.AddDomainEvent(new MenuCreated(menu));
         _menuRepository.Add(menu);
         
         return menu;

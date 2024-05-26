@@ -4,6 +4,7 @@ using BuberDinner.Application.Common.Interfaces.Services;
 using BuberDinner.Application.Common.Persistence;
 using BuberDinner.Infrastructure.Authentication;
 using BuberDinner.Infrastructure.Persistence;
+using BuberDinner.Infrastructure.Persistence.Interceptors;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace BuberDinner.Infrastructure;
 
-public static class  DependencyInjection
+public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
@@ -22,7 +23,7 @@ public static class  DependencyInjection
         services
             .AddAuth(builderConfiguration)
             .AddPersistence();
-        
+
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
         return services;
@@ -34,10 +35,11 @@ public static class  DependencyInjection
         {
             options.UseNpgsql("Host=localhost;Port=5432;Database=nope;Username=blackmercy;Password=programminggod228");
         });
-        
+
+        services.AddScoped<PublishDomainEventsInterceptor>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IMenuRepository, MenuRepository>();
-        
+
         return services;
     }
 
