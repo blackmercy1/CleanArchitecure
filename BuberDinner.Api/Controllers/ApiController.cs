@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace BuberDinner.Api.Controllers;
 
-[ApiController]
-[Route("auth")]
+[ApiController] 
+[Route("api/[controller]")]
 public class ApiController : ControllerBase
 { 
     public IActionResult Problem(List<Error> errors)

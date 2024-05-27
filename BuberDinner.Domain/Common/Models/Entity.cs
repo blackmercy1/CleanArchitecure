@@ -1,40 +1,42 @@
 namespace BuberDinner.Domain.Common.Models;
 
-public abstract class Entity<TId> : IEquatable<Entity<TId>>
+public abstract class Entity<TId> : IEquatable<Entity<TId>>, IHasDomainEvents
     where TId : notnull
 {
-    public TId Id { get; protected set; }
+    private readonly List<IDomainEvent> _domainEvents = new();
+    
+    public TId Id { get; protected init; }
 
-    protected Entity(TId id)
-    {
-        Id = id;
-    }
+    public IReadOnlyList<IDomainEvent> DomainEvents => _domainEvents.AsReadOnly();
+
+    protected Entity(TId id) => Id = id;
 
     public override bool Equals(object? obj)
     {
-        if (ReferenceEquals(null, obj)) return false;
-        if (ReferenceEquals(this, obj)) return true;
-        if (obj.GetType() != this.GetType()) return false;
-        return Equals((Entity<TId>) obj);
+        if (ReferenceEquals(null, obj)) 
+            return false;
+        if (ReferenceEquals(this, obj)) 
+            return true;
+        
+        return obj.GetType() == this.GetType() && Equals((Entity<TId>) obj);
     }
-
-    public static bool operator ==(Entity<TId> left, Entity<TId> right)
+    
+    public void AddDomainEvent(IDomainEvent domainEvent)
     {
-        return Equals(left, right);
+        _domainEvents.Add(domainEvent);
     }
-
-    public static bool operator !=(Entity<TId> left, Entity<TId> right)
+    
+    public void ClearDomainEvents()
     {
-        return Equals(left, right);
+        _domainEvents.Clear();
     }
+    
+    public static bool operator ==(Entity<TId> left, Entity<TId> right) => Equals(left, right);
+    public static bool operator !=(Entity<TId> left, Entity<TId> right) => Equals(left, right);
+    public bool Equals(Entity<TId>? other) => Equals((object?) other);
+    public override int GetHashCode() => Id.GetHashCode();
 
-    public bool Equals(Entity<TId>? other)
-    {
-       return Equals((object?) other); 
-    }
-
-    public override int GetHashCode()
-    {
-        return Id.GetHashCode();
-    }
+#pragma warning disable CS8618
+    protected Entity() { }
+#pragma warning restore CS8618
 }
